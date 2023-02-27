@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/jotform-enterprise-landing/static/css/main.4549f23f.css",
+    "main.js": "/jotform-enterprise-landing/static/js/main.4cb3cb46.js",
+    "static/media/apps.png": "/jotform-enterprise-landing/static/media/apps.b4cdc1c6fa5716a9b19f.png",
+    "static/media/prod-img.png": "/jotform-enterprise-landing/static/media/prod-img.aa0bc257c89c44a7fdc7.png",
+    "static/media/geo-img.png": "/jotform-enterprise-landing/static/media/geo-img.86d384d7a1018463049e.png",
+    "static/media/hero-img.png": "/jotform-enterprise-landing/static/media/hero-img.c95828d57b8355800af5.png",
+    "static/media/security-img.png": "/jotform-enterprise-landing/static/media/security-img.157d8f1304c545350138.png",
+    "static/media/user-img.png": "/jotform-enterprise-landing/static/media/user-img.b1aada80aa72515454bd.png",
+    "static/media/existing-img.png": "/jotform-enterprise-landing/static/media/existing-img.cefbdf5a15f555b27fe5.png",
+    "static/media/customer-img.png": "/jotform-enterprise-landing/static/media/customer-img.2cb4ef7aeded83aa7753.png",
+    "index.html": "/jotform-enterprise-landing/index.html",
+    "main.4549f23f.css.map": "/jotform-enterprise-landing/static/css/main.4549f23f.css.map",
+    "main.4cb3cb46.js.map": "/jotform-enterprise-landing/static/js/main.4cb3cb46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4549f23f.css",
+    "static/js/main.4cb3cb46.js"
+  ]
+}
