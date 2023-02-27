@@ -1,0 +1,28 @@
+@import url('https://fonts.cdnfonts.com/css/circular-std');
+@import './common';
+@import './variables';
+@import './images';
+@import './header';
+@import './hero';
+@import './brands';
+@import './apps';
+@import './user';
+@import './security';
+@import './customer';
+@import './features';
+@import './enterprise';
+@import './prod';
+@import './video';
+@import './information';
+@import './footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Circular Std', sans-serif;
+    background-color: #FBFCFF;
+}

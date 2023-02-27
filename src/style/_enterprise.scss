@@ -1,0 +1,78 @@
+.enterprise{
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: #2000BF;
+    background-image: url("https://cdn.jotfor.ms/p/enterprise/assets/img-min/navy-bg.svg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4;
+
+    @include md{
+        font-size: 1.3em;
+    }
+
+    @include lg{
+        font-size: 1.4em;
+    }
+
+    p{
+        @include lg{
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        @include xl{
+            max-width: 75%;
+            padding: 2rem;
+        }
+    }
+
+    &-p{
+        cursor: pointer;
+        text-decoration: underline;
+        font-weight: bold;
+        text-underline-offset: .3rem;
+        text-decoration-thickness: .15rem;
+        transition: all .2s ease-in-out;
+    }
+
+    .yellow{
+        color: #ffd038;
+
+        &:hover{
+            color: white;
+            background-color: #ffd038;
+        }
+    }
+
+    .red{
+        color: #ff758a;
+        
+        &:hover{
+            color: white;
+            background-color: #ff758a;
+        }
+    }
+
+    .orange{
+        color: #fb8028;
+
+        &:hover{
+            color: white;
+            background-color: #fb8028;
+        }
+    }
+
+    .green{
+        color: #1cbc6f;
+
+        &:hover{
+            color: white;
+            background-color: #1cbc6f;
+        }
+    }
+
+
+}

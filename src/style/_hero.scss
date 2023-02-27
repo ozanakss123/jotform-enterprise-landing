@@ -1,0 +1,196 @@
+.hero {
+    background-color: #FBFCFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem;
+
+    @include md {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    @include xxl {
+        padding: 1rem 7rem;
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+
+    .left{
+        @include md{
+            max-width: 50%;
+            margin-top: 3rem;
+        }
+    }
+
+    .right{
+        @include md{
+            max-width: 50%;
+        }
+    }
+
+    h5 {
+        margin-top: 36px;
+        text-transform: uppercase;
+        font-size: .9rem;
+        font-weight: 600;
+        padding: 1rem;
+        color: #6B7394;
+
+        @include md{
+            padding: .8rem 0;
+            font-size: 1rem;
+        }
+
+        @include lg{
+            margin-top: 0;
+        }
+
+        @include xxl{
+            font-size: 1.1rem;
+        }
+    }
+
+    h1 {
+        color: #1D2F61;
+        line-height: 2.25rem;
+        padding-bottom: 1rem;
+
+        @include md{
+            max-width: 20rem;
+            margin-top: 1rem;
+        }
+
+        @include lg{
+            max-width: 100%;
+        }
+
+        @include xxl{
+            font-size: 2.3rem;
+        }
+    }
+
+    .hero-text {
+        line-height: 2rem;
+        font-size: .9rem;
+        font-weight: 400;
+        padding: 1rem 1.3rem;
+        color: #1D2F61;
+
+        @include md{
+            padding: 1rem 0;
+            margin-right: 4rem;
+            font-size: 1rem;
+        }
+        
+        @include xxl{
+            font-size: 1.1rem;
+            line-height: 2.4rem;
+        }
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+        @include md{
+            flex-direction: column;
+            align-items: start;
+        }
+
+        @include lg{
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .btn-contact {
+            background-color: #09f;
+            color: #fff;
+            padding: 12px 40px;
+            transition: all 0.2s;
+
+            @include md{
+                margin-left: 0;
+                width: 100%;
+                max-width: 13rem;
+            }
+
+            @include xxl{
+                padding: 1rem 3rem;
+                max-width: 16rem;
+            }
+            
+
+            &:hover {
+                background-color: rgb(38, 167, 253);
+            }
+        }
+
+        .btn-demo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #09f;
+            border: 2px solid #09f;
+            margin-left: 1rem;
+            transition: all 0.2s;
+
+            @include md{
+                padding: 4px 10px;
+                font-size: 1rem;
+                margin-left: 0;
+                margin-top: 0.75rem;
+                width: 100%;
+                max-width: 13rem;
+            }
+
+            @include lg{
+                padding: 4px 10px;
+                margin-top: 0;
+                margin-left: .2rem;
+            }
+
+            @include xxl{
+                padding: 8px 10px;
+                max-width: 16rem;
+                margin-left: .625rem;
+            }
+
+            .btn-icon {
+                font-size: 1.4rem;
+                margin-left: .5rem;
+
+                @include xxl{
+                    font-size: 2rem;
+                }
+            }
+
+            p {
+                padding: .4rem;
+                margin-left: .2rem;
+
+                @include xxl{
+                    font-size: 1.1rem;
+                }
+            }
+
+            &:hover {
+                background-color: rgba(0, 153, 255, 0.08);
+            }
+        }
+    }
+
+    img {
+        width: 420px;
+        margin-top: 4rem;
+        max-width: 500px;
+
+        @include md{
+            width: 90%;
+            max-width: 90%;
+        }
+    }
+}

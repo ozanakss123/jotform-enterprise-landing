@@ -1,0 +1,115 @@
+.apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #fff;
+
+    @include md{
+        flex-direction: row;
+        text-align: start;
+    }
+
+    .right{
+        @include md{
+            order: 2;
+            max-width: 45%;
+        }  
+
+        @include xxl{
+        }
+    }
+
+    .left{
+        @include md{
+            order: 1;
+        }
+    }
+
+    h5{
+        @include md{
+            padding-left: 0;
+            font-size: 1rem;
+        }
+
+        @include xl{
+            margin-top: 0;
+        }
+
+        @include xxl{
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    h1{
+        color: #1D2F61;
+        line-height: 2.25rem;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        margin-bottom: .5rem;
+
+        @include md{
+            font-size: 1.7rem;
+        }
+
+        @include xxl{
+            font-size: 1.8rem;
+        }
+    }
+
+    &-heading{
+        margin-bottom: 2rem;
+
+        h3{
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: #2A6EE7;
+            margin-bottom: 1rem;
+
+            @include xxl{
+                font-size: 1.4rem;
+            }
+        }
+
+        p{
+            font-weight: 400;
+            font-size: .9rem;
+
+            @include md{
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+
+            @include xl{
+                width: 80%;
+            }
+
+            @include xxl{
+                width: 70%;
+                font-size: 1.1rem;
+            }   
+        }
+    }
+
+    &-image{
+        margin-top: 2rem;
+        width: 100%;
+
+        @include md{
+            width: 100%;
+            padding-right: 3rem;
+        }
+
+        @include xl{
+            padding: 0 5rem 0 3rem;
+            width: 110%;
+        }
+
+        @include xxl{
+            padding: 0 6rem 0 10rem;
+            width: 100%;
+        }
+    }
+}

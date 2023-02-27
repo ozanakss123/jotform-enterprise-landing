@@ -1,0 +1,358 @@
+.footer {
+    background-color: #fff;
+
+    &-top {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 2rem;
+
+        @include lg {
+            flex-direction: row;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        @include xxl {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        &-first {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 4rem;
+
+            @include md {
+                gap: 4px;
+            }
+
+            @include lg {
+                gap: 3rem;
+                min-width: 70%;
+            }
+
+            &-item {
+                flex: 50%;
+
+                @include md {
+                    flex: 24%;
+                }
+
+                @include lg {
+                    flex: 1;
+                }
+
+                .title {
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                    margin-bottom: .5rem;
+                    color: #0C174E;
+                }
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        padding: .6rem 0;
+                        color: #4E5887;
+                        cursor: pointer;
+                        font-size: 1rem;
+                        transition: .5s all;
+
+                        @include md {
+                            font-size: 1.1rem;
+                        }
+
+                        &:hover {
+                            color: #ff6100;
+                        }
+
+                        .list-expand {
+                            display: flex;
+                            align-items: center;
+
+                            .down-icon {
+                                margin-left: .2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3rem;
+
+            @include md {
+                align-items: flex-start;
+            }
+
+            @include lg {
+                margin-top: 0;
+            }
+
+            &-title {
+                font-weight: 700;
+                font-size: 1.1rem;
+                color: #0C174E;
+                margin: .5rem 0;
+
+                @include lg {
+                    margin-top: 0;
+                    ;
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+            &-logo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: .5rem;
+
+                @include lg {
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    align-content: flex-start;
+                }
+
+                img {
+                    width: 50%;
+                    cursor: pointer;
+                    transition: all .5s;
+
+                    @include lg {
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        filter: grayscale(100%)
+                    }
+                }
+            }
+        }
+    }
+
+    &-mid {
+        background-color: #F3F3FE;
+        .footer-mid-color {
+            background-color: #F3F3FE;
+            padding: 2rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include md {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            @include xl{
+                max-width: 75%;
+                margin: 0 auto;
+            }
+
+
+        }
+
+        .logo {
+            margin-bottom: 10px;
+
+            @include md {
+                margin-left: 1rem;
+                flex-basis: 10%;
+            }
+        }
+
+        .footer-mid-item-container {
+            @include md {
+                flex-basis: 50%;
+            }
+
+            @include md {
+                flex-basis: 70%;
+            }
+        }
+
+        &-item {
+            display: flex;
+            align-items: start;
+            position: relative;
+            margin-top: 0.5rem;
+
+            @include md {
+                flex-direction: column;
+            }
+
+            p {
+                padding-left: 1.5rem;
+                color: #454E80;
+            }
+
+            &-pin {
+                position: absolute;
+                top: 2px;
+                left: 0;
+                font-size: 1.3rem;
+                color: #454E80;
+            }
+        }
+
+        &-brand {
+            text-align: center;
+            color: #454E80;
+            margin-top: 1rem;
+
+            @include md {
+                text-align: start;
+            }
+        }
+
+        &-dropdown {
+            position: relative;
+            padding: 5px 10px;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 300px;
+            margin-top: 1rem;
+            line-height: 1.55;
+            background-color: #fff;
+            border: 1px solid #d5ddf9;
+            border-radius: 4px;
+            height: auto;
+            background-image: url("data:image/svg+xml,%3Csvg width='8' height='5' viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'%3E%3Cpath d='M4 3.06635L6.69752 0.234591C6.99548 -0.0781969 7.47857 -0.0781969 7.77653 0.234591C8.07449 0.547379 8.07449 1.05451 7.77653 1.3673L4.5395 4.76541C4.24154 5.0782 3.75846 5.0782 3.4605 4.76541L0.22347 1.3673C-0.07449 1.05451 -0.07449 0.547379 0.22347 0.234591C0.52143 -0.0781969 1.00452 -0.0781969 1.30248 0.234591L4 3.06635Z' fill='%230A1551'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 8px center;
+            background-size: 8px;
+
+            @include md {
+                flex-basis: 20%;
+                margin-left: 2rem;
+                margin-right: 2rem;
+                max-width: 350px;
+            }
+
+            @include xl {
+                flex-basis: 20%;
+                margin-left: 2rem;
+                margin-right: 2rem;
+                max-width: 200px;
+            }
+
+            select {
+                appearance: none;
+                background-color: transparent;
+                border: none;
+                padding: 0 1em 0 0;
+                margin: 0;
+                width: 100%;
+                font-family: inherit;
+                font-size: inherit;
+                cursor: inherit;
+                line-height: inherit;
+                outline: none;
+            }
+        }
+    }
+
+    .footer-bottom-color{
+        background-color: #C8CEED;
+        .footer-bottom {
+            background-color: #C8CEED;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+    
+            @include md{
+                align-items: flex-start;
+                padding: 2rem 1rem 1rem 2rem;
+            }
+    
+            @include lg{
+                padding: 1rem 2rem;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+    
+            @include xl{
+                max-width: 75%;
+                margin: 0 auto;
+            }
+    
+            &-link {
+                color: #505989;
+                text-decoration: none;
+                padding: .9rem;
+                transition: .3s all;
+                width: 100%;
+                text-align: center;
+    
+                @include md{
+                    text-align: start;
+                    padding: .2rem 1rem;
+                    border-right: 1px solid #AEB2CE;
+                    max-width: fit-content;
+                }
+    
+                &:last-child {
+                    margin-bottom: 2rem;
+    
+                    @include md{
+                        margin-bottom: 0;
+                        border-right: none;
+                    }
+                }
+    
+                &:first-child {
+                    @include md{
+                        padding-left: 0;
+                    }
+                }
+    
+                &:hover {
+                    color: #ff6100;
+                }
+            }
+    
+            .social{
+                display: flex;
+                margin-top: .5rem;
+    
+                @include lg{
+                    margin-top: 0;
+                }
+    
+                svg{
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    margin-left: .5rem;
+                    fill: #505989;
+                    cursor: pointer;
+
+                    &:hover{
+                        fill: #0C174E;
+                    }
+    
+                    @include md{
+                        margin-top: 1rem;
+                    }
+    
+                    @include lg{
+                        margin-top: 0;
+                    }
+    
+                    &:first-child {
+                        @include md{
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+    }
+    }
+}

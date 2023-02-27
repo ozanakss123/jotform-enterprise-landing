@@ -1,0 +1,15 @@
+.prod{
+    background-color: #fff;
+}
+
+.btn-prod {
+    background-color: #09f;
+    color: #fff;
+    padding: .8rem 3rem;
+    margin-top: 1.3rem;
+    transition: .2s all;
+
+    &:hover{
+        background-color: rgb(38, 167, 253);
+    }
+}

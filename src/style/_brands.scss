@@ -1,0 +1,136 @@
+.brands-container{
+    background-color: #1C71EE;
+    background-image: url(https://cdn.jotfor.ms/p/enterprise/assets/img-min/svg/brand-logo-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+
+    @include lg{
+        background-size: 70%;
+    }
+
+    h1{
+        text-align: center;
+        color: #fff;
+        font-size: 1.5rem;
+        margin-top: 4rem;
+        padding: 7rem 2rem 2rem 2rem;
+
+        @include md {
+            font-size: 1.7rem;
+        }
+
+        @include lg{
+            padding: 7rem 10rem 2rem 10rem;
+        }
+
+        @include xxl{
+            font-size: 1.8rem;
+            padding: 7rem 36rem 2rem 36rem;
+        }
+    }
+
+    .brand-logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        flex-wrap: wrap;
+        position: relative;
+
+        @include xxl{
+            padding: 0 15rem;
+        }
+
+        .brand-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem;
+            flex-basis: 30%;
+            width: 100%;
+
+            @include xl{}
+            
+            .brand-logo{
+                width: 13rem;
+
+                @include md{
+                    width: 18rem;
+                }
+
+                @include xl{
+                    width: 20rem;
+                }
+            }
+        }
+
+        .mobile{
+            display: none;
+
+            @include lg {
+                display: flex;
+            }
+        }
+
+        .right-icon{
+            position: absolute;
+            right: 2%;
+            top: 40%;
+            font-size: 3.5rem;
+            color: #BED5F7;
+            z-index: 10;
+            cursor: pointer;
+        }
+    }
+
+    .circle-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        padding-bottom: 2rem;
+
+        @include lg {
+            margin-top: 2rem;
+        }
+
+        @include xl{
+            margin-top: 3rem;
+        }
+        .circle{
+            background-color: #296CE4;
+            border: 2px solid #90B6F2;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            @include xl{
+                width: 20px;
+                height: 20px;
+            }
+
+            .circle-filled{
+                background-color: #fff;
+                width: 8px;
+                height: 8px;
+                border: 1px solid transparent;
+                border-radius: 50%;
+
+                @include xl{
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+
+        .desktop {
+            @include lg{
+                display: none;
+            }
+        }
+    }
+}
